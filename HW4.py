@@ -77,24 +77,37 @@ for item in range(0, 30):
         print("Item >=", item)
 # Сделать цикл for c переменной item который будет работать пока счётчик range досчитает от 0 до range_count +1
 for item in range(0, range_count + 1):
-    # Тело цикла:
-    # 12.1 Вывести в консоль (‘Step =’, item)
+# Тело цикла:
+# 12.1 Вывести в консоль (‘Step =’, item)
     print("Step =", item)
-    # 12.2 Сделать if с условием, если item равен  7.
+# 12.2 Сделать if с условием, если item равен  7.
     if item == 7:
-        # 	 - В теле if создать переменную inner_count равную 0
+    # 	 - В теле if создать переменную inner_count равную 0
         inner_count = 0
-        # 	 - В теле if вывести в консоль (‘-- inner_count =’, inner_count)
+    # 	 - В теле if вывести в консоль (‘-- inner_count =’, inner_count)
         print("-- inner_count =", inner_count)
-        # - В теле if сделать ещё одни цикл for с переменной inner_item который будет работать пока счётчик range
-        # досчитает от 0 до item.
+    #    - В теле if сделать ещё одни цикл for с переменной inner_item который будет работать пока счётчик range
+    # досчитает от 0 до item.
         inner_item: int
         for inner_item in range(0, item):
-            # 	Тело внутреннего цикла For:
-            # -- Вывести в консоль (‘-------- Inner_Step =’, inner_item)
+        # 	Тело внутреннего цикла For:
+        # -- Вывести в консоль (‘-------- Inner_Step =’, inner_item)
             print("-------- Inner_Step =", inner_item)
-            # -- Сделать if если inner_item равен 5, то в inner_count присвоить inner_item.
+        # -- Сделать if если inner_item равен 5, то в inner_count присвоить inner_item.
             if inner_item == 5:
                 inner_count = inner_item
-        # 	- За пределами тела предыдущего цикла вывести в консоль (‘-- inner_count =’, inner_count)
+    # 	- За пределами тела предыдущего цикла вывести в консоль (‘-- inner_count =’, inner_count)
         print("-- inner_count =", inner_count)
+# Сделать цикл for c переменной item который будет работать пока счётчик range досчитает от 0 до 20
+for item in range(0, 20):
+# Тело цикла:
+# 13.1 Вывести в консоль (‘Step =’, item)
+    print("Step =", item)
+# 13.2 Сделать if с условием, если item больше  7 и item меньше 12.
+    if 7 < item and item < 12:
+     # 	- В теле if вывести (‘If_item =’, item)
+        print('If_item =', item)
+      # 	- В теле if поставить continue
+        continue
+# 13.3 Выйти из if. Вывести в консоль (‘End_iteration =’, item)
+    print('End_iteration =', item)
